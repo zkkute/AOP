@@ -1,4 +1,4 @@
-package org.example;
+package org.example.aop.aspect.LogAspect;
 
 import jakarta.persistence.*;
 

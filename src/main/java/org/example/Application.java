@@ -8,6 +8,14 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy // <-- Включаем поддержку аспектов
 public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(application.class, args);
+    }
+
+    @EnableAspectJAutoProxy
+    @SpringBootApplication
+    public class application {
+        public static void main(String[] args) {
+            SpringApplication.run(application.class, args);
+        }
     }
 }
